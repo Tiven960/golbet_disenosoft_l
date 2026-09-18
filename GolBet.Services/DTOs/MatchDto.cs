@@ -9,6 +9,7 @@ namespace GolBet.Services.DTOs;
 public class MatchDto
 {
     public int Id { get; set; }
+
     public DateTime Date { get; set; }              // UTC; the view converts
     public MatchStatus Status { get; set; }
 
@@ -25,4 +26,6 @@ public class MatchDto
     public decimal DrawOdds { get; set; }
     public decimal AwayOdds { get; set; }
 }
+
+
 
