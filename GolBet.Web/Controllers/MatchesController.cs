@@ -12,7 +12,8 @@ public class MatchesController : Controller
     private readonly IMatchService _matchService;
     private readonly ITeamService _teamService;
 
-    public MatchesController(IMatchService matchService)
+    public MatchesController(IMatchService matchService,
+    ITeamService teamService)
     { 
          _matchService = matchService;
          _teamService = teamService;
